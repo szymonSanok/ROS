@@ -1,5 +1,8 @@
 *{
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
@@ -7,14 +10,27 @@
     margin: 10px 10%;
 }
 
+#main-site header{
+    background: #006064;
+    width: 100%;
+    padding: 70px 0;
+    margin-bottom: 50px;
+}
+
+#main-site header h1{
+    font-size: 5em;
+    color: white;
+}
 
 
+/*Przyciski*/
 #buttons{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 #buttons button{
@@ -26,12 +42,6 @@
     text-decoration: none;
     font-size: 3em;
     align-self: center;
-}
-
-@media (max-width: 800px) {
-    #buttons button{
-        margin: 10px;
-    }
 }
 
 #button1{
@@ -46,8 +56,10 @@
 #button4{
     background-color: #263238;
 } 
+/*Koniec stylowania przycisków*/
 
 
+/*Zegarek z datą*/
 #clock{
     position: fixed;
     bottom:10px;
@@ -56,3 +68,26 @@
     text-align: right;
     z-index: 20;
 }
+
+/*Dostosowanie pod różne ekrany*/
+@media screen and (max-width: 800px) {
+    #buttons button{
+        margin: 10px;
+        font-size: 2em;
+    }
+
+    #main-site header{
+        padding: 30px 0;
+        margin-bottom: 30px;
+    }
+
+    #main-site header h1{
+        font-size: 3.5em;
+    }
+}
+
+/*@media screen and (max-width: 400px) {
+    #main-site header h1{
+        font-size: 2em;
+    }
+}*/
