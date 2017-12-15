@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
     <title>ROS - Restaurant Ordering System</title>
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container" id="index-site">
         <header>
             <img src="img/restaurant.png" alt="Restaurant Ordering System">
         </header>
@@ -22,10 +23,10 @@
             <a href="foodstuffs.php"><button id="button3">Foodstuffs</button></a>
             <a href="reports.php"><button id="button4">Reports</button></a>
         </div>
-        
-        <div id="clock"></div>
-        <script>counter();</script>
     </main>
+
+    <div id="clock"> <script>counter();</script> </div>
+    
     
 </body>
     
