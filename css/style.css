@@ -1,0 +1,37 @@
+.container{
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Lato', sans-serif;
+}
+
+#buttons button{
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#button1{
+    background-color: #01579B;
+}
+#button2{
+    background-color: #8BC34A;
+}
+#button3{
+    background-color: #00BCD4;
+}
+#button4{
+    background-color: #263238;
+} 
+
+
+#clock{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    font-size:1.5em;
+    text-align: right;
+    z-index: 20;
+}

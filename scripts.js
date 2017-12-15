@@ -35,7 +35,7 @@ var data1 = new String();
         if (second<10){
              second = "0" + second;
         }
-        document.getElementById("clock").innerHTML = day + "-" + month + "-" + year + " | " + hour + ":" + minute + ":" + second;
+        document.getElementById("clock").innerHTML = day + "-" + month + "-" + year + "<br>" + hour + ":" + minute + ":" + second;
         data1=day + "-" + month + "-" + year + " | " + hour + ":" + minute + ":" + second;
         setTimeout("counter()",1000);
     }
