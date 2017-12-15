@@ -28,6 +28,12 @@
     align-self: center;
 }
 
+@media (max-width: 800px) {
+    #buttons button{
+        margin: 10px;
+    }
+}
+
 #button1{
     background-color: #01579B;
 }
