@@ -1,3 +1,5 @@
+<?php include_once('header.php'); ?>
+<body>
 <li><button onclick="licz();"><img src="img/"/>Zatwierdź</button></li>   
 <h2 id="zliczanie"></h2> 
 
@@ -35,4 +37,7 @@
 		} 
 echo "</table>";
         }
-    ?> 
+	?> 
+	
+	</body>
+</html>
