@@ -1,6 +1,6 @@
 <?php include_once('header.php'); ?>
 <body>
-<li><button onclick="licz();"><img src="img/"/>Zatwierdź</button></li>   
+<button onclick="licz();" id="orders-confirm-btn">Zatwierdź</button> 
 <h2 id="zliczanie"></h2> 
 
 <?php
