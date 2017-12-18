@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     text-align: center;
     margin: 10px 10%;
@@ -111,6 +115,7 @@ Lista zamówień
 #list-items figure{
     align-self: center;
     margin: 10px;
+    cursor: pointer;
 }
 
 #list-items figcaption{
@@ -122,7 +127,7 @@ Lista zamówień
     border: 2px solid #ddd;
 }
 
-#orders-confirm-btn{
+.orders-confirm-btn{
     margin-top:50px;
     border: none;
     color: white;
@@ -133,4 +138,104 @@ Lista zamówień
     text-decoration: none;
     font-size: 3em;
     align-self: center;
+}
+
+.order-product-type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.order-product-type button{
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 3em;
+    align-self: center;
+    background: #263238;
+}
+
+.ingredients-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 2em;
+}
+
+.ingredients-section{
+    margin: 30px;
+}
+
+.ingredients-choice{
+    text-align: left;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked),
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label,
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F44336;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after,
+[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after,
+[type="checkbox"]:checked + label:after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+[type="text"]{
+    padding: 50px 100px;
+    font-size: 2em;
 }

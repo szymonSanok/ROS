@@ -1,14 +1,15 @@
 
 
 <div id="kebab">
-    <button onclick="hide('hide');recognize('Ciasto');">Ciasto</button>
-    <button onclick="hide('hide');recognize('Bulka');">Bułka</button>
-    <button onclick="hide('hide');recognize('Tortilla');">Tortilla</button>
-    <button onclick="hide('hide');recognize('Doner');">Doner</button>   
-    <button onclick="hide('hide');recognize('Danie');">Danie</button> 
-    <button onclick="hide('hide');recognize('Box');">Box</button> 
+    <div class="order-product-type">
+        <button onclick="hide('hide');recognize('Ciasto');">Ciasto</button>
+        <button onclick="hide('hide');recognize('Bulka');">Bułka</button>
+        <button onclick="hide('hide');recognize('Tortilla');">Tortilla</button>
+        <button onclick="hide('hide');recognize('Doner');">Doner</button>   
+        <button onclick="hide('hide');recognize('Danie');">Danie</button> 
+        <button onclick="hide('hide');recognize('Box');">Box</button> 
+    </div>
     <?php include 'ingredientsKebab.php';?>
-    <hr/>
     
     <?php
         $connect = mysqli_connect("localhost", "root","","restaurant");  
