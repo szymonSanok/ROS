@@ -1,5 +1,3 @@
-
-
 <div id="kebab">
     <div class="order-product-type">
         <button onclick="hide('hide');recognize('Ciasto');">Ciasto</button>

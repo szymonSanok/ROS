@@ -1,5 +1,5 @@
 <div class="ingredients" id="hide">
-    <h2 id="rodzaj"></h2>
+    <h1 id="rodzaj"></h1>
     <h2 id="query"></h2>
     <div class="ingredients-sections">
         <div class="ingredients-section">

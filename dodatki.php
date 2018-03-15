@@ -1,8 +1,9 @@
 <div id="dodatki">
-    <button onclick="hide('hideD');recognize('Frytki');">Frytki</button>
-    <button onclick="hide('hideD');recognize('Nuggetsy');">Nuggetsy</button>
+    <div class="order-product-type">
+        <button onclick="hide('hideD');recognize('Frytki');">Frytki</button>
+        <button onclick="hide('hideD');recognize('Nuggetsy');">Nuggetsy</button>
+    </div>
     <?php include 'ingredientsDodatki.php';?>
-    <hr/>
     
     <?php
         $connect = mysqli_connect("localhost", "root","","restaurant");  

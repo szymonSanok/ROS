@@ -84,7 +84,7 @@ button{
     box-sizing: border-box;
     font-size:1.5em;
     text-align: right;
-    z-index: 20;
+    z-index: 90;
     background: rgba(255,255,255,0.9)
 }
 
@@ -237,6 +237,14 @@ Lista zamówień
     border-radius: 100%;
     transition: all 0.2s ease;
 }
+
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before{
+    border-radius: 10%;
+}
+
 [type="radio"]:not(:checked) + label:after,
 [type="checkbox"]:not(:checked) + label:after{
     opacity: 0;
@@ -251,4 +259,32 @@ Lista zamówień
 [type="text"]{
     padding: 50px 100px;
     font-size: 2em;
+}
+
+.ingredients-section{
+    padding: 20px;
+    border: 1px #9E9E9E solid;
+}
+
+.ingredients-section label{
+    margin: 20px 0;
+}
+
+#rodzaj{
+    font-size: 2.5em;
+    padding: 15px 0;
+    width: 20%;
+    margin: auto;
+    background: #4CAF50;
+    color: #fff;
+}
+
+#rodzaj::before{
+    content: "Wybrano: ";
+}
+
+@media screen and (max-width: 800px) {
+    #rodzaj{
+        width: 90%;
+    }
 }
